@@ -2,12 +2,13 @@ var autoproxy_host = {
     "google.com": 1,
     "twitter.com": 1
     "youtube.com": 1
+    "baidu.com": 1
 };
 function FindProxyForURL(url, host) {
     var lastPos;
     do {
         if (autoproxy_host.hasOwnProperty(host)) {
-            return 'PROXY 192.168.123.1:7890';
+            return 'SOCKS 192.168.123.1:7891';
         }
         
         lastPos = host.indexOf('.') + 1;
