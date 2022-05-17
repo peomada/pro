@@ -1,5 +1,5 @@
-var PROXY = "PROXY 192.168.123.1:7890";
-var DERECT = "DIRECT";
+var PROXY = "DIRECT";
+var DERECT = "PROXY 192.168.123.1:7890";
 
 var FILTERS = [
     "192.168.123.1",
