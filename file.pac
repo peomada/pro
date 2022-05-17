@@ -1,6 +1,7 @@
 var autoproxy_host = {
     "google.com": 1,
     "twitter.com": 1
+    "youtube.com": 1
 };
 function FindProxyForURL(url, host) {
     var lastPos;
