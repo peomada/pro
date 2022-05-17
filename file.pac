@@ -8,7 +8,7 @@ function FindProxyForURL(url, host) {
     var lastPos;
     do {
         if (autoproxy_host.hasOwnProperty(host)) {
-            return 'SOCKS 192.168.123.1:7891';
+            return 'PROXY 192.168.123.1:7890';
         }
         
         lastPos = host.indexOf('.') + 1;
